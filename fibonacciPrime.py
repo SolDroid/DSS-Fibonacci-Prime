@@ -50,13 +50,6 @@ def is_prime(value):
             return False
     return True
 
-# for j in range(iters):
-#     start_time = time.time()
-#     find_fibonacci_primes([2, 3, 5, 13, 89, 233, 1597, 28657, 514229, 433494437, 10008, 1213190, 1231231, 91247])
-#     # print(is_prime(1000000015787))
-#     # print("--- " + str(time.time() - start_time) + " seconds ---")
-#     total_time += time.time() - start_time
-
 while True:
     arr = input("Enter input list with desired separator(s) (enter E to exit): ")
     if (arr.upper() == "E"): break
