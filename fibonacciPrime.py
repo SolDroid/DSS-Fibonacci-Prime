@@ -6,6 +6,7 @@
 import numpy
 import time
 
+# Defining constants for Binet's formula
 ROOT5 = numpy.sqrt(5)
 PHI = (1+ROOT5) / 2
 LOGPHI = numpy.log(PHI)
