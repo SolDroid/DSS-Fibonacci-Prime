@@ -28,7 +28,7 @@ def find_fibonacci_primes(arr):
         if (fibIndex == -1): continue
 
         # Checks if the index is a prime number as all prime Fibonacci numbers will have a prime index, skips the value if not (README section 2.3)
-        if (not (is_prime(fibIndex))): continue
+        if (not is_prime(fibIndex)): continue
 
         # Finally, checks if the value is prime (README section 2.4)
         if (is_prime(value)): outArr.append(value)
