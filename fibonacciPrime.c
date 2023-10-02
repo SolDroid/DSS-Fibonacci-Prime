@@ -7,7 +7,8 @@ int * find_fibonacci_primes(int arr[]) {
     return 0;
 }
 
-short unsigned int is_prime(unsigned int value) {
+short int is_prime(unsigned int value) {
+    if (!(value & 1)) return 0;
     return 0;
 }
 
