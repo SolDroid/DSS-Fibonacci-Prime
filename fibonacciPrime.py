@@ -50,7 +50,7 @@ def is_prime(value):
 
     # Iterate through possible factors, limited to the square root of the value as dividing by any number less than this would result in a corresponding factor greater than sqrt(value)
     for i in range(4, int(numpy.sqrt(value)) + 1):
-        if value % i == 0:
+        if (value % i == 0):
             return False
     return True
 
