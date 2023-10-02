@@ -1,3 +1,5 @@
+# RUN WITH PYTHON 3
+
 import numpy
 import time
 
@@ -26,7 +28,7 @@ def find_fibonacci_primes(arr):
 
         # Checks if the index is a prime number as all prime Fibonacci numbers will have a prime index, skips the value if not
         # How this logic was derived can be found here, alongside the rationale for the added is_prime() usage
-        if (not is_prime(fibIndex)): continue
+        if (not (is_prime(fibIndex))): continue
 
         # Finally, checks if the value is prime
         if (is_prime(value)): outArr.append(value)
@@ -55,8 +57,8 @@ def is_prime(value):
 
 while True:
     arr = input("Enter input list with desired separator(s) (enter E to exit): ")
-    if (arr.upper() == "E"): break
     try:
+        if (arr.upper() == "E"): break
         arr = [int(value) for value in arr.split(" ")]
     except:
         print("Bad Input")
