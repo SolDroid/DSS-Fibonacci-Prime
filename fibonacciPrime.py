@@ -11,9 +11,12 @@ iters = 1000
 def find_fibonacci_primes(arr):
     outArr = []
     for value in arr:
-        # Check for basic cases
-        if (value == 1): continue
-        if (value <= 3): outArr.append(value)
+        # Check for basic cases (README 2.1)
+        if (value <= 3): 
+            if(value != 1):
+                outArr.append(value)
+            else:
+                continue
 
         # Find Fibonacci index
         fibIndex = fibonacci_index(value)
