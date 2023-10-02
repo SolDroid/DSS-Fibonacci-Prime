@@ -8,8 +8,15 @@ int * find_fibonacci_primes(int arr[]) {
 }
 
 short int is_prime(unsigned int value) {
+    // Filters out even numbers
     if (!(value & 1)) return 0;
-    return 0;
+
+    for (int i = 3; i <= sqrt(value)) {
+        if (value % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
 }
 
 int main(void) {
