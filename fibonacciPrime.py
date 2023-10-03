@@ -64,12 +64,13 @@ while True:
         print("Bad Input")
         continue
     start_time = time.time()
+    print("Fibonacci primes: ")
     print(find_fibonacci_primes(arr))
     print("Finished in " + str(time.time() - start_time))
 
 # Just a little CubeSat
-print("""     Thank
-      you
+print("""           Thank
+            you
 
        ____________
       |\___________\\
@@ -88,5 +89,5 @@ print("""     Thank
         \|__________\|
          '           '
 
-    Solomon
-    Killam""")
+           Solomon
+           Killam""")
